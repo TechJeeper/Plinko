@@ -1,0 +1,55 @@
+{
+  "name": "plinko",
+  "author": "caffeinegamer",
+  "version": "1.0.0",
+  "keywords": ["pebble-app", "game", "arcade", "plinko"],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "Plinko",
+    "uuid": "c8f3a91e-6b24-4d7a-9e15-2f0d8c47b6a3",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery", "basalt", "diorite", "flint"],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": ["configurable"],
+    "messageKeys": [
+      "Vibrate",
+      "Difficulty",
+      "BallsPerRound",
+      "ShowAimGuide",
+      "BackgroundColor",
+      "PegColor",
+      "BallColor"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BALL",
+          "file": "images/ball.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_PEG",
+          "file": "images/peg.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_TITLE",
+          "file": "images/title.png"
+        }
+      ]
+    }
+  }
+}
